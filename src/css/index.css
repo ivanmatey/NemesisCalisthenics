@@ -1,0 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body header {
+  border: 1px red solid;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.css.map */
