@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 *,
 *::before,
 *::after {
@@ -6,9 +7,53 @@
   padding: 0;
 }
 
+body {
+  font-family: "Raleway", sans-serif;
+}
 body header {
-  border: 1px red solid;
+  background-color: black;
+  color: white;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+body header .main-logo {
+  width: 50px;
+}
+body header .navbar {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+}
+body header .navbar li {
+  position: relative;
+  padding: 0.3rem;
+  border: 2px black solid;
+}
+body header .navbar li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.5s ease;
+}
+body header .navbar li:hover::after {
+  width: 100%;
+}
+body header .navbar li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: color 0.5s ease;
+}
+body header .navbar li a:hover {
+  color: red;
 }
 
 /*# sourceMappingURL=index.css.map */
