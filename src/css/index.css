@@ -169,5 +169,80 @@ body main .mainContainer .showcasing .container .infoContainer p {
 body main .mainContainer .showcasing .container .infoContainer .backmuscle {
   width: 100%;
 }
+body main .mainContainer .perks {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body main .mainContainer .perks .topSection h3 {
+  text-align: center;
+  font-size: 40px;
+}
+body main .mainContainer .perks table tr td {
+  padding: 1rem;
+  text-align: center;
+  width: 24%;
+}
+body main .mainContainer .perks table tr td .tableImage {
+  width: 70px;
+  height: 70px;
+}
+body main .mainContainer .perks table tr td p {
+  height: 80px;
+}
+body main .mainContainer .perks table tr td p span {
+  margin-right: 5px;
+}
+body main .mainContainer .perks .button {
+  height: 60px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+}
+body main .mainContainer .perks .button svg {
+  position: absolute;
+  top: 0;
+  left: 470px;
+}
+body main .mainContainer .perks .button svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 353, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+body main .mainContainer .perks .button span {
+  font-weight: bolder;
+  color: red;
+  color: linear-gradient(to right, red 0%, white 100%);
+}
+body main .mainContainer .perks .button:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 437;
+}
+body main .mainContainer .perks .check {
+  color: red;
+}
+body main .mainContainer .maps {
+  text-align: center;
+}
+body main .mainContainer .maps .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+body main .mainContainer .maps .container h3 {
+  font-size: 40px;
+}
+body main .mainContainer .maps .container .map {
+  filter: grayscale(100%) invert(100%);
+}
 
 /*# sourceMappingURL=index.css.map */
