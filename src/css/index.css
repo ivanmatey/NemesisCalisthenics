@@ -9,6 +9,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  font-size: 25px;
 }
 body header {
   background-color: black;
@@ -115,6 +116,58 @@ body main .landing .mainText .button:hover svg rect {
   stroke-width: 4;
   stroke-dasharray: 196, 543;
   stroke-dashoffset: 437;
+}
+body main .mainContainer {
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+body main .mainContainer .introductionInfo {
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+body main .mainContainer .introductionInfo .box1, body main .mainContainer .introductionInfo .box2 {
+  width: 40%;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body main .mainContainer .introductionInfo .box1 h3, body main .mainContainer .introductionInfo .box2 h3 {
+  font-size: 40px;
+  text-align: center;
+}
+body main .mainContainer .introductionInfo .box1 p, body main .mainContainer .introductionInfo .box2 p {
+  text-align: justify;
+}
+body main .mainContainer .showcasing {
+  padding: 2rem;
+}
+body main .mainContainer .showcasing .container {
+  display: flex;
+  justify-content: space-between;
+}
+body main .mainContainer .showcasing .container .handstand {
+  width: 40%;
+  height: 835px;
+}
+body main .mainContainer .showcasing .container .infoContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 2rem 1rem;
+  width: 40%;
+}
+body main .mainContainer .showcasing .container .infoContainer h3 {
+  font-size: 40px;
+}
+body main .mainContainer .showcasing .container .infoContainer p {
+  text-align: justify;
+}
+body main .mainContainer .showcasing .container .infoContainer .backmuscle {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

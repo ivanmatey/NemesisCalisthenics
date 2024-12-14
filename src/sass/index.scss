@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap");
 
 $raleway: "Raleway", sans-serif;
+$fontsize: 25px;
 
 *,
 *::before,
@@ -12,6 +13,7 @@ $raleway: "Raleway", sans-serif;
 
 body{
     font-family: $raleway;
+    font-size: $fontsize;
     header{
         // border: 1px red solid;
         background-color: black;
@@ -174,6 +176,58 @@ body{
                 //       z-index: 1;                    // Ensure text stays visible
                 //     }
                 //   }
+            }
+        }
+        .mainContainer{
+            background-color: black;
+            color: white;
+            padding: 2rem;
+            .introductionInfo{
+                padding: 0 2rem;
+                display: flex;
+                justify-content: space-between;
+                .box1,.box2{
+                    width: 40%;
+                    padding: 2rem 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    h3{
+                        font-size: 40px;
+                        text-align: center;
+                    }
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+            .showcasing{
+                padding: 2rem;
+                .container{
+                    display: flex;
+                    justify-content: space-between;
+                    .handstand{
+                        width: 40%;
+                        height: 835px;
+                    }
+                    .infoContainer{
+                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        padding: 2rem 1rem;
+                        width: 40%;
+                        h3{
+                            font-size: 40px;
+                        }
+                        p{
+                            text-align: justify;
+                        }
+                        .backmuscle{
+                            width: 100%;
+                        }
+                    }
+                }
             }
         }
     }
