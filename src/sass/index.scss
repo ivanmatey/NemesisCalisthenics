@@ -65,4 +65,116 @@ body{
             }
         }
     }
+    main{
+        .landing{
+            background-image: url(../images/bg_1.png);
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            .filter{
+                background-color: black;
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+            .mainText{
+                position: absolute;
+                color: white;
+                top: 40%;
+                left: 15%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .title{
+                    text-align: center;
+                    font-size: 60px;
+                    font-weight: bolder;
+
+                }
+                .button{
+                    height: 60px;
+                    margin-top: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: relative;
+                    text-decoration: none;
+                    svg{
+                        position: absolute;
+                        top: 0;
+                        left: 150px;
+                        rect{
+                            stroke-width: 4;
+                            stroke-dasharray: 353, 0;
+                            stroke-dashoffset: 0;
+                            -webkit-transition: all 600ms ease;
+                            transition: all 600ms ease;
+                        }
+                    }
+                    span{
+                        font-weight: bolder;
+                        color: red;
+                        color: linear-gradient(to right,
+                        red 0%,
+                        white 100%);
+                    }
+                    &:hover{
+                        svg{
+                            rect{
+                                stroke-width: 4;
+                                stroke-dasharray: 196, 543;
+                                stroke-dashoffset: 437;
+                            }
+                        }
+                    }
+                    // width: ;
+                }
+                // .button {
+                //     position: relative;              // Required for pseudo-elements
+                //     display: inline-block;           // Inline-block to fit the text
+                //     padding: 0.75rem 1.5rem;         // Button padding
+                //     font-size: 1rem;                 // Text size
+                //     color: white;                    // Text color
+                //     background-color: #3498db;       // Background color
+                //     border: 2px solid #3498db;       // Initial border
+                //     border-radius: 50px;             // Rounded corners
+                //     text-decoration: none;           // Remove underline
+                //     font-weight: bold;               // Bold text
+                //     cursor: pointer;                 // Pointer cursor
+                //     overflow: hidden;                // Clip pseudo-element overflow
+                //     transition: background-color 0.3s ease, color 0.3s ease; // Smooth transition for background & text
+                  
+                //     &::after {
+                //       content: '';
+                //       position: absolute;
+                //       bottom: 0;                     // Align to bottom
+                //       left: 0;                       // Start from left
+                //       width: 0;                      // Initially hidden
+                //       height: 100%;                  // Full height of the button
+                //       background-color: #2ecc71;     // Border color for hover
+                //       transition: width 0.3s ease;   // Smooth transition for the width
+                //       z-index: 0;                    // Behind the text
+                //     }
+                  
+                //     &:hover {
+                //       color: #3498db;                // Change text color on hover
+                //       background-color: white;       // Background change
+                //     }
+                  
+                //     &:hover::after {
+                //       width: 100%;                   // Expand border to full width
+                //     }
+                  
+                //     span {
+                //       position: relative;            // Keep the text above pseudo-element
+                //       z-index: 1;                    // Ensure text stays visible
+                //     }
+                //   }
+            }
+        }
+    }
 }
