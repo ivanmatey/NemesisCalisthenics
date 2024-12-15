@@ -26,9 +26,6 @@ body{
             width: 50px;
             // border: 1px red solid;
         }
-        // h1{
-        //     // border: 1px red solid;
-        // }
         .navbar{
             width: 50%;
             list-style: none;
@@ -68,6 +65,8 @@ body{
         }
     }
     main{
+        background-color: black;
+        color: white;
         .landing{
             background-image: url(../images/bg_1.png);
             height: 100vh;
@@ -179,8 +178,6 @@ body{
             }
         }
         .mainContainer{
-            background-color: black;
-            color: white;
             padding: 2rem;
             .introductionInfo{
                 padding: 0 2rem;
@@ -316,6 +313,28 @@ body{
                     .map{
                         filter: grayscale(100%) invert(100%);
                     }
+                }
+            }
+        }
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        .container{
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            .box3{
+                .input-email{
+                    padding: 0.5rem;
+                }
+                .input-submit{
+                    padding: 0.5rem;
+                    cursor: pointer;
+                    border: 1px white solid;
+                    background-color: #1b1b1b;
+                    color: white;
                 }
             }
         }

@@ -56,6 +56,10 @@ body header .navbar li a {
 body header .navbar li a:hover {
   color: red;
 }
+body main {
+  background-color: black;
+  color: white;
+}
 body main .landing {
   background-image: url(../images/bg_1.png);
   height: 100vh;
@@ -118,8 +122,6 @@ body main .landing .mainText .button:hover svg rect {
   stroke-dashoffset: 437;
 }
 body main .mainContainer {
-  background-color: black;
-  color: white;
   padding: 2rem;
 }
 body main .mainContainer .introductionInfo {
@@ -243,6 +245,26 @@ body main .mainContainer .maps .container h3 {
 }
 body main .mainContainer .maps .container .map {
   filter: grayscale(100%) invert(100%);
+}
+body footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+body footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+body footer .container .box3 .input-email {
+  padding: 0.5rem;
+}
+body footer .container .box3 .input-submit {
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 1px white solid;
+  background-color: #1b1b1b;
+  color: white;
 }
 
 /*# sourceMappingURL=index.css.map */
